@@ -78,7 +78,6 @@ class Video {
     }
 }
 
-private static final Logger LOG = LoggerFactory.getLogger(Application.class);
 private static final String TABLE_NAME = "videos";
 private CqlSession session;
 
@@ -179,7 +178,7 @@ public void connect(final String node, final Integer port, final String dataCent
 
 public class Application {
 
-
+private static final Logger LOG = LoggerFactory.getLogger(Application.class);
     public void run() {
         //CassandraConnector connector = new CassandraConnector();
         connect("10.198.243.75", 9042, "Test Cluster");
