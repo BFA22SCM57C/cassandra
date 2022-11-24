@@ -85,7 +85,7 @@ public class Application {
 private static final Logger LOG = LoggerFactory.getLogger(Application.class);
     public void run() {
         //CassandraConnector connector = new CassandraConnector();
-        connect("10.198.243.75", 9042, "Test Cluster");
+/*        connect("10.198.243.75", 9042, "Test Cluster");
         //CqlSession session = connector.getSession();
 
 
@@ -105,7 +105,7 @@ private static final Logger LOG = LoggerFactory.getLogger(Application.class);
         videos.forEach(x -> LOG.info(x.toString()));
        
 	
-	close();
+	close();*/
     }
 	public static void main(String[] args) {
     		new Application().run();
