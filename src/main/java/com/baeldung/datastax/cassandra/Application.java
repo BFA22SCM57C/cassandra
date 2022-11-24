@@ -78,11 +78,7 @@ class Video {
     }
 }
 
-public class Application {
-
-
-
-    private static final Logger LOG = LoggerFactory.getLogger(Application.class);
+private static final Logger LOG = LoggerFactory.getLogger(Application.class);
 private static final String TABLE_NAME = "videos";
 private CqlSession session;
 
@@ -179,6 +175,9 @@ public void connect(final String node, final Integer port, final String dataCent
     public void close() {
         session.close();
     }
+
+
+public class Application {
 
 
     public void run() {
